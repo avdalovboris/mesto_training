@@ -1,0 +1,11 @@
+.element {
+  position: relative;
+  max-width: 282px;
+}
+
+@media (max-width: 375px) {
+  .element {
+    width: 88.125vw;
+  }
+  
+}

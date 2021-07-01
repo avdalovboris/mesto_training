@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>last-thing-mesto</title>
+</head>
+<body class="body">
+
+  <div class="page">
+
+    <header class="header">
+        <div class="logo"></div>
+    </header>
+
+    <main class="content">
+
+      <section class="profile">
+        <img src="./images/profile/__avatar/jak-iv-kusto.png" alt="Аватар пользователя" class="profile__avatar">
+        <div class="profile__info">
+          <div class="profile__name">
+            <h1 class="profile__full-name">Жак-Ив Кусто</h1>
+            <button type="button" class="profile__edit"></button>
+            <p class="profile__profession">Исследователь океана</p>
+          </div>
+        </div>
+
+        <button type="button" class="profile__add">
+          <img src="./images/profile/__plus/button__plus-min.svg" alt="знак плюс у кнопки добавить" class="profile__plus">
+        </button>
+      </section>
+      
+      <section class="elements">
+        <ul class="elements__list">
+
+        </ul>
+      </section>
+
+    </main>
+
+    <div class="popup" id="popupFullScreen">
+      <div class="full-screen">
+        <div class="full-screen__block">
+          <img alt="#" class="full-screen__img" src="#">
+          <p class="full-screen__text">ada</p>
+          <button type="button" class="popup__close" id="popupCloseFullScreen"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popupEditProfile">
+      <div class="popup__container">
+        <h2 class="popup__title">Редактировать профиль</h2>
+
+        <form action="#" method="GET"  class="popup__form" name="user" novalidate>
+
+          <input type="text" class="popup__field" id="user-name" name="popup__name" minlength="2" maxlength="40" required>
+          <span id="user-name-error" class="error"></span>
+
+          <input type="text" class="popup__field" id="user-job" name="popup__job" minlength="2" maxlength="200" required>
+          <span id="user-job-error" class="error"></span>
+
+          <button type="submit" class="popup__button">Сохранить</button>
+        </form>
+
+          <button type="button" class="popup__close" id="popupCloseEdit"></button>
+
+      </div>
+    </div>
+
+    <div class="popup" id="popupAddPhoto">
+      <div class="popup__container">
+        <h2 class="popup__title">Новое место</h2>
+
+        <form action="#" method="GET"  class="popup__form" name="new" novalidate>
+
+          <input type="text" class="popup__field" id="name-card" name="name" placeholder="Название" minlength="2" maxlength="30" required>
+          <span id="name-card-error" class="error"></span>
+
+          <input type="url" class="popup__field" id="link" name="link" placeholder="Ссылка на картинку" required>
+          <span id="link-error" class="error"></span>
+
+          <button type="submit" class="popup__button">добавить</button>
+        </form>
+
+        <button type="button" class="popup__close" id="popupCloseAdd"></button>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__text">&copy; 2021 Mesto Russia</p>
+    </footer>
+  </div>
+
+  <template id="templateElement">
+    <li class="element">
+      <img src="#" alt="Фотография загруженная пользователем" class="element__img">
+      <div class="element__info">
+        <h2 class="element__name">...</h2>
+        <button type="button" class="element__like element__like_no-active"></button>
+      </div>
+      <button type="button" class="element__delite" id="elementDelite"></button>
+    </li>
+  </template>
+
+<script type="module" src="./twoscript/twoscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.profile__name {
+  display: grid;
+  grid-template-columns: 59.0625vw 11.5625vw;
+  justify-content: flex-end;
+  column-gap: 10px;
+}
+
+@media (min-width: 375px) {
+  .profile__name {
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    row-gap: 10px;
+  }
+}
+
+@media (min-width: 620px) {
+  .profile__name {
+    row-gap: 6px;
+    column-gap: 19px;
+  }
+}

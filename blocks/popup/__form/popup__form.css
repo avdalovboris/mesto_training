@@ -1,0 +1,14 @@
+.popup__form {
+  width: 84.3971631%;
+  margin: 69px auto 0;
+  display: grid;
+  grid-row-gap: 26px;
+}
+
+@media (min-width: 620px){
+  .popup__form {
+    width: 358px;
+    margin: 42px auto 0;
+    grid-row-gap: 25px;
+  }
+}

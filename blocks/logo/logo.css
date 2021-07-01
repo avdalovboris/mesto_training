@@ -1,0 +1,27 @@
+.logo {
+  width: 103.74px;
+  height: 24.4px;
+  background-image: url(../../images/logo/logo-min.svg  );
+  margin: 8.75vw 0 9.875vw 8.4375vw;
+}
+
+@media (min-width: 321px) {
+  .logo {
+    margin: 28px 0 31.6px 27px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin: 3.64583333vw 0 4.11458333vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 142px;
+    height: 33px;
+    background-image: url(../../images/logo/logo.svg);
+    margin: 45px 0 41px;
+  }
+}

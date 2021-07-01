@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  .page {
+    margin: 0 6.25vw;
+    max-width: 880px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    margin: 0 auto;
+  }
+}
+

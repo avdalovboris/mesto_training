@@ -1,0 +1,9 @@
+.error {
+  color: #ff0000;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+}

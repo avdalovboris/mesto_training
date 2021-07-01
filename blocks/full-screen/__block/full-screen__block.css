@@ -1,0 +1,7 @@
+.full-screen__block {
+  max-width: 75vw;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  row-gap: 10px;
+}

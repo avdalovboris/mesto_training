@@ -1,0 +1,30 @@
+.profile__add {
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  transition: all .3s ease-in-out;
+}
+
+@media (min-width: 375px) {
+  .profile__add {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 330px;
+    justify-self: center;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile__add {
+    max-width: 150px;
+  }
+}
+
+.profile__add:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

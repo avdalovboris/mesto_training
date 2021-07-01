@@ -1,0 +1,5 @@
+.full-screen{
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(min-content, 880px);
+}

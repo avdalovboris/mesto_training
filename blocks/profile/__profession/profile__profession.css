@@ -1,0 +1,37 @@
+.profile__profession {
+  margin: 8px 0 32px;
+  font-weight: normal;
+  font-size: 4.375vw;
+  line-height: 121.428571%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 336px;
+}
+
+@media (min-width: 375px) {
+  .profile__profession {
+    font-size: 3.375vw;
+    margin: 0;  
+  }
+}
+
+@media (min-width: 550px) {
+  .profile__profession {
+    font-size: 17px;
+  }
+} 
+
+@media (min-width: 768px) {
+  .profile__profession {
+    font-size: 1.40625vw;
+    line-height: 122.222222%;
+    justify-self: start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .profile__profession {
+    font-size: 18px;
+  }
+}
